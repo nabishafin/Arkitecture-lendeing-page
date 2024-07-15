@@ -9,6 +9,10 @@
     display: flex;
 }
 
+.text-orange {
+    color: rgba(255, 144, 14, 1);
+}
+
 .text-gray {
     color: #727272;
 }
@@ -21,7 +25,7 @@
     background-color: rgba(255, 144, 14, 1);
     border-radius: 5px;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -46,19 +50,24 @@
     color: #727272;
     margin-right: 50px;
     font-weight: 500px;
+    font-size: 30px;
 
 }
 
 
 .navbar,
 .banner {
-    max-width: 1420px;
-    margin: auto auto;
+    max-width: 1440px;
+    margin: 0% auto;
+
 }
 
 .brand {
     font-weight: 700;
-    font-size: 3 rem;
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
 }
 
 .banner-details {
@@ -76,11 +85,145 @@
     width: 100%;
 }
 
+.main-conatiner {
+    max-width: 1440px;
+    margin: 0% auto;
+
+}
+
+/* features container styles */
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 40px;
+    gap: 15px;
+
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.features-details {
+    padding: 20px;
+
+}
+
+/* enjoy-section style css */
+
+.enjoy-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.enjoy-tittle {
+    font-size: 4rem;
+    font-weight: 700;
+    padding-left: 5px;
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    margin: 0%;
+}
+
+.enjoy-h3 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0%;
+}
+
+.box-cart {
+    padding: 15px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    margin-bottom: 10px;
+}
+
+.orange-details {
+    background-color: rgba(255, 144, 14, 1);
+    padding: 30px;
+    width: 130px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: -100px;
+    margin-top: -100px;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.img-enjoy {
+    position: relative;
+    padding-left: 120px;
+}
+
+/* some facts css */
+
+
+/* responsive styles */
+
 @media screen and (max-width:560px) {
 
     .navbar,
     .nav-items,
     .nav-links {
         flex-direction: column;
+    }
+
+    .features-container {
+        flex-direction: column;
+    }
+
+    .img-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .features-details {
+        padding: 40px;
+    }
+
+    .btn-features {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* enjoy section */
+    .enjoy-section {
+        flex-direction: column;
+        gap: 0px;
+
+    }
+
+    .arcitec-img {
+        width: 350px;
+    }
+
+    .orange-details {
+        display: none;
+    }
+
+    .img-enjoy {
+        padding: 10px;
+    }
+
+    .part-01 {
+        padding: 15px;
     }
 }
