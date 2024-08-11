@@ -165,7 +165,7 @@
 
 }
 
-.img-enjoy {
+x .img-enjoy {
     position: relative;
     padding-left: 120px;
 }
@@ -280,6 +280,6 @@ footer {
     }
 
     .foter-text {
-        padding: 10px;
+        padding: ;
     }
 }
